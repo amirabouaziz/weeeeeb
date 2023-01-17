@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style2.css">
+</head>
+<body >
+
+
+    
+ <section  class="contact">
+    <div class="content">
+        <nav>
+            <a class="button" id="menu_actuelle" href="contact.html">Contact</a> &nbsp &nbsp &nbsp
+           <a class="button" href="adresse.html">Adresse</a> &nbsp &nbsp &nbsp
+          <a class="button" href="education.html">Education</a>&nbsp &nbsp &nbsp
+          <a class="button" href="experience.html">Expérience</a> &nbsp &nbsp &nbsp
+          <a class="button" href="hobbies.html">Hobies</a>&nbsp &nbsp &nbsp
+        </nav>
+                               <h2>Contact Us</h2>
+                                        <p>Bienvenue Sur Mon Site Web 
+            
+        </p>
+
+
+
+    </div>
+<div class="container">
+    <div class="contactInfo">
+         <div class="box">
+            <div class="icon">  <img src="../images/espace-reserve (3).png"" width="10px" weight="10px"></div>
+            <div class="text"></div>
+            <h3 class="white">Address</h3>
+            <p class="white">________Route Manzel Chaker km4.5____________</p>
+
+         </div>
+
+
+    </div>
+ <div class="box">
+            <div class="icon"> <img src="../images/telephone.png" alt=""  width="10px" weight="10px"></div>
+            <div class="text"></div>
+            <h3 class="white">Phone</h3>
+            <p class="white">+21628022585</p>
+            <p class="white">+21655973175</p>
+
+         </div>
+         
+
+    </div>
+    <div class="box">
+        <div class="icon"> <img src="../images/message.png" alt=""  width="10px" weight="10px"></div>
+        <div class="text"></div>
+        <h3 class="white">Email</h3>
+        <p class="white">bouazizamira00@gmail.com</p>
+
+     </div>
+     
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="contactFrom">
+    <form action="" id="myform">
+
+<h2 class="white"> Send Message</h2>
+
+<div class="inputBox">
+
+    <input type="text" required >
+    <span class="white"> Full Name</span>
+
+
+</div>
+
+<div class="inputBox">
+
+    <input type="text"  required>
+    <span class="white"> Email</span>
+
+
+</div>
+<div class="inputBox">
+
+ <textarea name="" id="" cols="30" rows="10" required ></textarea>
+    <span class="white"> Type  Your Message</span>
+</div>
+
+<div class="=inputBox">
+    <input type="submit" name="submit" id="username" value="send" required>
+    <br>
+    <span id="error">
+    </span>
+    <br>
+</div>
+
+    </form>
+
+
+
+    <script>
+
+        let myform = document.getElementById('submit')
+       let myregex=/^[a-zA-Z-\s]+$/;
+
+        myform.addEventListener('submit', function(e){
+        
+            let myinput=document.getElementById('username');
+            if (myinput.value.trime()==""){
+                let myerror=document.getElementById('error')
+                myerror.innerHTML="le champs username est requis"
+                myerror.style.color='red';
+                alert('test');
+                e.preventDefault();            }
+        
+        else if(myregex.tes(myinput.value)==false){
+
+            let myerror=document.getElementById('error')
+                myerror.innerHTML="le nom doit comporter des lettres ,des tirets uniquement"
+                myerror.style.color='red';
+                e.preventDefault();    
+
+
+        }
+        
+    }
+        
+        )
+        
+            </script>
+
+
+</div>
+<div class="social">
+<a href="scancode.html"><img   class="w"   src="../images/wathsup.png" alt=""></a> 
+<a href="https://www.facebook.com"> <img  class="w" src="../images/facebook.png" alt=""></a>
+ <a href="https://www.instagram.com/?hl=fr"><img  class="w" src="../images/Instagram_logo_2022.svg.png" alt=""></a>
+ <a href="https://www.linkedin.com/in/amira-bouaziz-86428419a/"><img  class="w" src="../images/linked.png"></a>
+</div>
+ </section>  
+ 
+
+
+
+
+   
+
+
+
+</body>
+</html>
